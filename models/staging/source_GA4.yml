@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: ga4_source_test
+    project: elevate-playground
+    dataset: source_data
+    description: ga4 fake data for test
+    tables:
+      - name: source_ga4_sample
