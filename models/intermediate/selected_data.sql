@@ -1,0 +1,1 @@
+SELECT  event_date, event_name, user_id FROM {{ ref('ga4_sample_data') }}
