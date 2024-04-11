@@ -29,7 +29,7 @@ wang_dbt_proj_test:
       job_execution_timeout_seconds: 300
       job_retries: 1
       location: US
-      method: oauth
+      method: service-account
       priority: interactive
       project: elevate-playground
       threads: 4
@@ -39,7 +39,7 @@ wang_dbt_proj_test:
       job_execution_timeout_seconds: 300
       job_retries: 1
       location: US
-      method: oauth
+      method: service-account
       priority: interactive
       project: elevate-playground
       threads: 4
