@@ -1,0 +1,47 @@
+dbt_chanel_test:
+  outputs:
+    dev:
+      dataset: wang_x_dev
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: EU
+      method: oauth
+      priority: interactive
+      project: fsh-digital-dashboard-prd
+      threads: 4
+      type: bigquery
+    test:
+      dataset: test
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: EU
+      method: oauth
+      priority: interactive
+      project: fsh-digital-dashboard-prd
+      threads: 4
+      type: bigquery
+  target: dev
+
+wang_dbt_proj_test:
+  outputs:
+    dev:
+      dataset: wang_x_dev
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: elevate-playground
+      threads: 4
+      type: bigquery
+    prod:
+      dataset: prd
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: elevate-playground
+      threads: 4
+      type: bigquery
+  target: dev
