@@ -34,6 +34,7 @@ wang_dbt_proj_test:
       project: elevate-playground
       threads: 4
       type: bigquery
+      keyfile: /secrets/dbt-service-keyfile
     prod:
       dataset: prd
       job_execution_timeout_seconds: 300
@@ -44,4 +45,5 @@ wang_dbt_proj_test:
       project: elevate-playground
       threads: 4
       type: bigquery
+      keyfile: /secrets/dbt-service-keyfile
   target: dev
